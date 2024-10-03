@@ -1,1 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: Arial, sans-serif;
+  background: url('path-to-your-background-image.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  line-height: 1.6;
+}
+
+.transparent-header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent header */
+  padding: 20px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+
+.blog-title {
+  font-size: 3em;
+  color: #fff;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+.blog-subtitle {
+  font-size: 1.5em;
+  color: #f1f1f1;
+}
+
+main {
+  padding-top: 100px; /* To compensate for the fixed header */
+}
+
+.intro {
+  text-align: center;
+  margin: 50px 0;
+  animation: slideIn 1.5s ease-out;
+}
+
+.blog-posts {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.post {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  margin: 20px;
+  padding: 20px;
+  width: 300px;
+  animation: fadeInUp 2s ease-in-out;
+}
+
+.read-more-btn {
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.adsense-block {
+  text-align: center;
+  margin: 50px 0;
+}
+
+/* Keyframe animations */
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-50px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-100px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(50px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Footer */
+footer {
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
