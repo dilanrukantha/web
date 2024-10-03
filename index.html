@@ -1,32 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Simple GitHub Page</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Travel Blog - Explore the world with us">
+  <title>Travel Blog</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Google Adsense -->
+  <script data-ad-client="YOUR-ADSENSE-ID" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My GitHub Page</h1>
-        <p>This is a simple webpage hosted on GitHub Pages.</p>
-    </header>
 
-    <section>
-        <h2>About This Page</h2>
-        <p>This page is designed to test hosting a website using GitHub Pages. Feel free to modify it.</p>
+  <!-- Header Section -->
+  <header class="transparent-header">
+    <div class="header-content">
+      <h1 class="blog-title">Explore the World</h1>
+      <p class="blog-subtitle">Your guide to travel adventures</p>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section class="intro">
+      <h2>Welcome to Our Travel Blog</h2>
+      <p>Join us as we explore beautiful places across the globe!</p>
     </section>
 
-    <section id="dynamic-section">
-        <h2>Click the Button Below</h2>
-        <button onclick="showMessage()">Click Me</button>
-        <p id="message" style="display:none;">Hello! You clicked the button.</p>
+    <section class="blog-posts">
+      <!-- Sample Post -->
+      <article class="post">
+        <h3 class="post-title">Discover the Wonders of Bali</h3>
+        <p class="post-excerpt">Bali is one of the most enchanting islands in Indonesia. Let's take you on a virtual tour...</p>
+        <button class="read-more-btn">Read More</button>
+      </article>
     </section>
 
-    <footer>
-        <p>&copy; 2024 My Simple Website | Hosted on GitHub Pages</p>
-    </footer>
+    <!-- AdSense Ad Placeholder -->
+    <div class="adsense-block">
+      <!-- Replace with your AdSense code -->
+      <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="YOUR-ADSENSE-ID"
+        data-ad-slot="YOUR-AD-SLOT"
+        data-ad-format="auto"></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+  </main>
 
-    <script src="script.js"></script>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Travel Blog. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
